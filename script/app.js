@@ -40,6 +40,7 @@ form.addEventListener('submit', formSend)
 async function formSend(e) {
 	e.preventDefault()
 	let formData = new FormData(form)
+	console.log(formData)
 
 	let response = await fetch('sendMail.php', {
 		method: 'POST',

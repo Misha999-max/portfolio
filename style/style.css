@@ -74,6 +74,7 @@
 }
 .header nav ul li {
 	list-style: none;
+	padding: 5px;
 }
 .header nav ul li a {
 	display: inline-block;
@@ -84,18 +85,19 @@
 	font-weight: 400;
 	font-size: 15px;
 	letter-spacing: 0.6px;
+	transition: all 0.4s;
 }
 .header nav ul li a i {
 	margin-right: 10px;
 	font-size: 18px;
-	transition: 0.4s;
+	transition: all 0.4s;
 }
 
-.header nav ul li a:hover i {
-	background-color: var(--themeColor);
+.header nav ul li a:hover {
+	color: var(--themeColor);
 }
 .header nav ul li a.active i {
-	color: var(--themeColor);
+	color: #33dff2;
 }
 
 /*  ===== header footer  ====== */
@@ -883,7 +885,7 @@ main {
 
 #contacts .contacts-row .contacts-rifht {
 	flex-basis: 60%;
-	min-width: 60%;
+	/* min-width: 60%; */
 	background-color: white;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
 	border-radius: 30px;
