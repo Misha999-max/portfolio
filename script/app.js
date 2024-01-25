@@ -6,7 +6,7 @@ menuBtn.addEventListener('click', e => {
 })
 
 let typed = new Typed('.auto-input', {
-	strings: ['Front-End Developer!', 'Freelancer!'],
+	strings: ['Фронтенд-Разработчик', 'Фрилансер!'],
 	typeSpeed: 100,
 	backSpeed: 100,
 	backDelay: 2000,
@@ -34,21 +34,52 @@ window.addEventListener('scroll', function () {
 	})
 })
 
-const form = document.getElementById('form')
+//const form = document.getElementById('form')
 
-form.addEventListener('submit', formSend)
-async function formSend(e) {
-	e.preventDefault()
-	let formData = new FormData(form)
-	console.log(formData)
+// form.addEventListener('submit', formSend)
+// async function formSend(e) {
+// 	e.preventDefault()
+// 	let formData = new FormData(form)
+// 	console.log(formData)
 
-	let response = await fetch('sendMail.php', {
-		method: 'POST',
-		body: formData,
-	})
-	if (response.ok) {
-		form.reset()
-	} else {
-		alert('ошибка')
-	}
-}
+// 	let response = await fetch('sendMail.php', {
+// 		method: 'POST',
+// 		body: formData,
+// 	})
+// 	if (response.ok) {
+// 		form.reset()
+// 	} else {
+// 		alert('ошибка')
+// 	}
+// }
+
+//console.log(msg, name, mail)
+
+// var email = $('#contact #email').val();
+// var message = $('#contact textarea').val();
+// console.log(
+// 	'mailto:mihailkalacev9@gmail.com?subject=The message from portfolio  - ' +
+// 		name +
+// 		' (' +
+// 		mail +
+// 		')' +
+// 		'&body=' +
+// 		msg
+// )
+
+// const btnClick = document.getElementById('btn_click')
+
+// btnClick.addEventListener('click', event => {
+// 	event.preventDefault()
+// 	const name = document.getElementById('name').value,
+// 		mail = document.getElementById('mail').value,
+// 		msg = document.getElementById('msg').value
+// 	window.location.href =
+// 		'mailto:mihailkalacev9@gmail.com?subject=The message from portfolio  - ' +
+// 		name +
+// 		' (' +
+// 		mail +
+// 		')' +
+// 		'&body=' +
+// 		msg
+// })

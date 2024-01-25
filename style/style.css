@@ -39,9 +39,9 @@
 	margin: 10px 0;
 }
 .header .profile img {
-	width: 150px;
+	width: 200px;
 	border-radius: 50%;
-	border: 10px solid var(--iconBGcolor);
+	border: 3px solid var(--themeColor);
 }
 
 .header .profile h1 {
@@ -257,13 +257,16 @@ main {
 }
 .sub-para {
 	color: var(--textColor);
-	font-size: 15px;
+	font-size: 25px;
 	letter-spacing: 0.5px;
-	font-weight: 400;
+	font-weight: 600;
 	margin-top: 15px;
+	margin-bottom: 50px;
 }
 #about .about-col {
 	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
 	gap: 20px;
 	margin-top: 25px;
 }
@@ -290,8 +293,9 @@ main {
 }
 #about .about-col .info-col p {
 	color: var(--textColor);
-	font-size: 15px;
-	font-weight: 800;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 30px;
 	letter-spacing: 0.5px;
 	font-style: italic;
 }
