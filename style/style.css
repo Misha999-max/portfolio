@@ -560,6 +560,20 @@ main {
 	font-style: italic;
 	margin-bottom: 15px;
 }
+.sert_link {
+	text-decoration: none;
+	color: var(--themeColor);
+	display: inline-block;
+	transition: all 0.3s ease;
+}
+.sert_link:hover {
+	transform: scale(1.2);
+	margin-left: 10px;
+	color: green;
+}
+.sert_link:active {
+	color: inherit;
+}
 #resume .resume-row .resume-col .pro-exp {
 	padding: 0 20px 0 20px;
 	border-left: 2px solid var(--themeColor);
